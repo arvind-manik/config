@@ -10,7 +10,16 @@ bindkey "[C" forward-word
 bindkey "[D" backward-word
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+#Flutter path export
+export PATH="$PATH:/Users/artuno/development/flutter/bin"
+#OpenJDK path
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+#Flutter chrome exec. env variable
+export CHROME_EXECUTABLE="/Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser"
+#ADB and other platform tools
+export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/artuno/.oh-my-zsh"
@@ -98,8 +107,6 @@ alias lsr='ls -R'
 
 DU_OPTS='-hs'
 alias du='du ${DU_OPTS}'
-
-
 
 # User configuration
 
