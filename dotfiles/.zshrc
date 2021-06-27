@@ -5,6 +5,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Turn off all beeps
+unsetopt BEEP
+# Turn off autocomplete beeps
+# unsetopt LIST_BEEP
+
 #Binding opt + left/right keybinds
 bindkey "[C" forward-word
 bindkey "[D" backward-word

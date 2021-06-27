@@ -8,6 +8,11 @@ set showmatch
 set incsearch
 set hlsearch
 
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
 
 colorscheme molokai
